@@ -76,6 +76,7 @@
         .nav .card img {
             width: 100%;
             height: 70%;
+           
         }
 
         .nav a {
@@ -99,17 +100,6 @@
 
         }
 
-        @keyframes cardEnter {
-            0% {
-                transform: translateY(40px);
-                opacity: 0.2;
-            }
-
-            100% {
-                transform: 0;
-                opacity: 1;
-            }
-        }
 
         /* 手机端字体变小 */
         @media screen and (max-width: 600px) {
@@ -151,6 +141,7 @@
         .girlShell img {
             width: 30%;
             height: 100%;
+            /* animation: girlRotate 2s linear infinite; */
         }
         .girlShell span{
             font-size: 2rem;
@@ -173,7 +164,26 @@
         }
 
 
+        @keyframes girlRotate {
+            0% {
+                transform: rotate(0deg);
+            }
 
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes cardEnter {
+            0% {
+                transform: translateY(40px);
+                opacity: 0.2;
+            }
+
+            100% {
+                transform: 0;
+                opacity: 1;
+            }
+        }
         @keyframes girlEnter {
             0% {
                 transform: translateX(40px);
@@ -213,10 +223,10 @@
         </div>
 
         <div class="card">
-            <a href="html/famousTea.html">
+            <a href="html/tasteTeaStep.html">
                 <img src="https://cbu01.alicdn.com/img/ibank/2017/942/133/6498331249_1829288745.jpg" alt="">
                 <div class="card-content">
-                    <a href="html/teaIntroduction.html">品茶步骤</a>
+                    <a href="html/tasteTeaStep.html">品茶步骤</a>
                 </div>
             </a>
         </div>

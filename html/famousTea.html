@@ -33,7 +33,10 @@
             margin: 20px;
             position: relative;
             transition: all 700ms ease-in;
+            overflow: hidden;
+            font-size: 1.5rem;
         }
+
 
         .panel h3 {
             font-size: 24px;
@@ -53,12 +56,20 @@
         .panel.active li{
             opacity: 1;
         }
-        .panel.active h3 {
+        .panel.active h1 {
             opacity: 1;
             transition: all 0.7s ease-in 0.4s;
+            animation: 1.5s shakePanelText infinite;
         }
-
-        @media (max-width: 480px) {
+        @keyframes shakePanelText {
+            0%{
+                opacity: 0.5;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        @media (max-width: 880px) {
             .container {
                 width: 100vw;
             }
@@ -66,7 +77,9 @@
             .panel.panel.active {
                 flex: 2;
             }
-
+            .panel{
+                font-size: 0.7rem;
+            }
             /* .panel:nth-of-type(4),
             .panel:nth-of-type(5) {
                 display: none;
@@ -99,7 +112,7 @@
                     <li>制茶步骤</li>
                 </a><a href="famousTea.html">
                     <li>茶叶品种</li>
-                </a><a href="famousTea.html">
+                </a><a href="tasteTeaStep.html">
                     <li>品茶步骤</li>
                 </a><a href="moreDetail.html">
                     <li>更多资讯</li>
